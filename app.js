@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let myBalance = 10000;
 let myPin = 1234;
@@ -33,8 +34,8 @@ if (pinAns.pin === myPin) {
                 console.log("Insufficient Balance");
             }
             else {
-                myBalance -= fastCashAns.FastCash;
-                console.log(`${fastCashAns.FastCash} Withdraw Successful`);
+                myBalance -= fastCashAns.FastCash
+                    .log(`${fastCashAns.FastCash} Withdraw Successful`);
                 console.log(`Your remaining Balance is ${myBalance}`);
             }
             ;
@@ -55,9 +56,9 @@ if (pinAns.pin === myPin) {
             }
             ;
         }
-        if (operationAns.operation === "check balance") {
-            console.log(`Your Current Is ${myBalance}`);
-        }
+    }
+    else if (operationAns.operation === "check balance") {
+        console.log(`Your Current Is ${myBalance}`);
     }
 }
 else {
