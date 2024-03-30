@@ -34,8 +34,8 @@ if (pinAns.pin === myPin) {
                 console.log("Insufficient Balance");
             }
             else {
-                myBalance -= fastCashAns.FastCash
-                    .log(`${fastCashAns.FastCash} Withdraw Successful`);
+                myBalance -= fastCashAns.FastCash;
+                console.log(`${fastCashAns.FastCash} Withdraw Successful`);
                 console.log(`Your remaining Balance is ${myBalance}`);
             }
             ;
