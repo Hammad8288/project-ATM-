@@ -41,9 +41,9 @@ if(pinAns.pin === myPin){
         if (fastCashAns.FastCash > myBalance){
         console.log("Insufficient Balance")
         } else { 
-        myBalance -= fastCashAns.FastCash
-        .log(`${fastCashAns.FastCash} Withdraw Successful`)  
-         console.log(`Your remaining Balance is ${myBalance}`)
+        myBalance -= fastCashAns.FastCash;
+        console.log(`${fastCashAns.FastCash} Withdraw Successful`)  
+        console.log(`Your remaining Balance is ${myBalance}`)
         };
  }  else if (withdrawAns.withdrawMethod ===  "Enter Amount "){
         let amountAns = await inquirer.prompt([{
